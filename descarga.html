@@ -1,78 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Acceso ProApps</title>
+<title>Acceso</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 body{
 margin:0;
-font-family:-apple-system,Arial;
-background:linear-gradient(180deg,#020617,#0f172a);
+font-family:Arial;
+background:#020617;
 color:white;
 text-align:center;
 }
 
-.box{
-margin-top:120px;
-padding:20px;
-}
+.box{margin-top:100px;}
 
 input{
-padding:14px;
-border-radius:14px;
+padding:12px;
+border-radius:10px;
 border:none;
-width:85%;
-margin-top:15px;
-font-size:16px;
+width:80%;
+margin-top:10px;
 }
 
 button{
-padding:14px;
+padding:12px;
 border:none;
-border-radius:14px;
-background:linear-gradient(45deg,#22c55e,#16a34a);
+border-radius:10px;
+background:#22c55e;
 color:white;
-margin-top:15px;
-width:85%;
-font-size:16px;
-}
-
-.error{
-color:#ef4444;
 margin-top:10px;
+width:80%;
 }
 </style>
+
 </head>
 
 <body>
 
 <div class="box">
-<h1>🔐 Acceso privado</h1>
+
+<h1>🔐 Acceso requerido</h1>
 <p>Introduce tu código</p>
 
-<input id="code" placeholder="Código de acceso">
+<input id="code" placeholder="Código">
 <button onclick="checkCode()">Entrar</button>
 
-<p id="error" class="error"></p>
+<p style="margin-top:20px;">¿No tienes acceso?</p>
+
+<a href="https://www.paypal.com/paypalme/anto7004/20">
+<button>💳 Comprar acceso</button>
+</a>
+
 </div>
 
 <script>
 var codigosValidos = [
 "VIP123",
 "PRO777",
-"APP2026",
-"ACCESO999"
+"APP2026"
 ];
 
 function checkCode(){
 var code = document.getElementById("code").value;
-var error = document.getElementById("error");
 
 if(codigosValidos.includes(code)){
 window.location.href = "apps.html";
 }else{
-error.innerText = "Código incorrecto";
+alert("Código incorrecto");
 }
 }
 </script>
