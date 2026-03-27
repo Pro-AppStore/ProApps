@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Apps ProApps</title>
+<title>ProApps</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -12,72 +12,171 @@ background:#020617;
 color:white;
 }
 
+/* HEADER */
 .header{
 padding:20px;
-text-align:center;
+font-size:22px;
+font-weight:bold;
 }
 
-.container{
+/* SCROLL HORIZONTAL */
+.row{
+display:flex;
+overflow-x:auto;
 padding:15px;
+gap:15px;
 }
 
 .card{
+min-width:140px;
 background:#111827;
 border-radius:18px;
 padding:15px;
-margin-bottom:12px;
-display:flex;
-justify-content:space-between;
-align-items:center;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.icon{
+font-size:30px;
+margin-bottom:10px;
 }
 
 .name{
-font-size:16px;
+font-size:14px;
+margin-bottom:10px;
 }
 
 .btn{
-padding:10px 15px;
+padding:8px 10px;
 border:none;
 border-radius:10px;
 background:#22c55e;
 color:white;
+font-size:13px;
 }
 </style>
+
 </head>
 
 <body>
 
-<div class="header">
-<h2>📥 Apps disponibles</h2>
+<div class="header">🔥 Apps Destacadas</div>
+
+<div class="row">
+
+<div class="card">
+<div class="icon">🎬</div>
+<div class="name">FlixVision</div>
+<a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/FlixVision.apk">
+<button class="btn">Descargar</button>
+</a>
 </div>
 
-<div class="container">
+<div class="card">
+<div class="icon">📺</div>
+<div class="name">XuperTV</div>
+<a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/XuperTV.apk">
+<button class="btn">Descargar</button>
+</a>
+</div>
 
-<div class="card"><span class="name">AK47 Sports</span><a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/AK47.Sports.apk"><button class="btn">Descargar</button></a></div>
+<div class="card">
+<div class="icon">⚡</div>
+<div class="name">OnStream</div>
+<a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/OnStream.apk">
+<button class="btn">Descargar</button>
+</a>
+</div>
 
-<div class="card"><span class="name">Aptoide TV</span><a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/AptoideTv.apk"><button class="btn">Descargar</button></a></div>
+<div class="card">
+<div class="icon">🍿</div>
+<div class="name">StreamFlix</div>
+<a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/StreamFlix.apk">
+<button class="btn">Descargar</button>
+</a>
+</div>
 
-<div class="card"><span class="name">FilmApp</span><a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/FilmApp.apk"><button class="btn">Descargar</button></a></div>
+</div>
 
-<div class="card"><span class="name">FilmPlus</span><a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/FilmPlus.apk"><button class="btn">Descargar</button></a></div>
+<div class="header">📦 Más Apps</div>
 
-<div class="card"><span class="name">FlixVision</span><a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/FlixVision.apk"><button class="btn">Descargar</button></a></div>
+<div class="row">
 
-<div class="card"><span class="name">Magma TV</span><a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/Magma.apk"><button class="btn">Descargar</button></a></div>
+<div class="card">
+<div class="icon">🏆</div>
+<div class="name">AK47 Sports</div>
+<a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/AK47.Sports.apk">
+<button class="btn">Descargar</button>
+</a>
+</div>
 
-<div class="card"><span class="name">MXL Movies</span><a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/MxlMovies.apk"><button class="btn">Descargar</button></a></div>
+<div class="card">
+<div class="icon">📲</div>
+<div class="name">Aptoide TV</div>
+<a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/AptoideTv.apk">
+<button class="btn">Descargar</button>
+</a>
+</div>
 
-<div class="card"><span class="name">MXL TV</span><a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/MxlTV.apk"><button class="btn">Descargar</button></a></div>
+<div class="card">
+<div class="icon">🎥</div>
+<div class="name">FilmApp</div>
+<a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/FilmApp.apk">
+<button class="btn">Descargar</button>
+</a>
+</div>
 
-<div class="card"><span class="name">OnStream</span><a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/OnStream.apk"><button class="btn">Descargar</button></a></div>
+<div class="card">
+<div class="icon">🎞️</div>
+<div class="name">FilmPlus</div>
+<a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/FilmPlus.apk">
+<button class="btn">Descargar</button>
+</a>
+</div>
 
-<div class="card"><span class="name">PlayerPro</span><a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/PlayerPro.apk"><button class="btn">Descargar</button></a></div>
+<div class="card">
+<div class="icon">🔥</div>
+<div class="name">Magma TV</div>
+<a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/Magma.apk">
+<button class="btn">Descargar</button>
+</a>
+</div>
 
-<div class="card"><span class="name">StreamFlix</span><a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/StreamFlix.apk"><button class="btn">Descargar</button></a></div>
+<div class="card">
+<div class="icon">🎬</div>
+<div class="name">MXL Movies</div>
+<a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/MxlMovies.apk">
+<button class="btn">Descargar</button>
+</a>
+</div>
 
-<div class="card"><span class="name">TV Clásica</span><a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/TvClasica.apk"><button class="btn">Descargar</button></a></div>
+<div class="card">
+<div class="icon">📺</div>
+<div class="name">MXL TV</div>
+<a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/MxlTV.apk">
+<button class="btn">Descargar</button>
+</a>
+</div>
 
-<div class="card"><span class="name">XuperTV</span><a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/XuperTV.apk"><button class="btn">Descargar</button></a></div>
+<div class="card">
+<div class="icon">🎵</div>
+<div class="name">PlayerPro</div>
+<a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/PlayerPro.apk">
+<button class="btn">Descargar</button>
+</a>
+</div>
+
+<div class="card">
+<div class="icon">📻</div>
+<div class="name">TV Clásica</div>
+<a href="https://github.com/Pro-AppStore/ProApps/releases/download/untagged-4146068b0b2cfe85c06c/TvClasica.apk">
+<button class="btn">Descargar</button>
+</a>
+</div>
 
 </div>
 
