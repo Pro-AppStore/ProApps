@@ -8,16 +8,28 @@
 body{
 margin:0;
 font-family:-apple-system,Arial;
-background:#020617;
+background:linear-gradient(180deg,#020617,#000000);
 color:white;
 }
 
-.header{
+/* BANNER */
+.banner{
+height:220px;
+background:url('https://images.unsplash.com/photo-1606813907291-d86efa9b94db') center/cover;
+display:flex;
+align-items:flex-end;
 padding:20px;
 font-size:22px;
 font-weight:bold;
 }
 
+/* HEADER */
+.header{
+padding:15px;
+font-size:20px;
+}
+
+/* SCROLL */
 .row{
 display:flex;
 overflow-x:auto;
@@ -25,12 +37,14 @@ padding:15px;
 gap:15px;
 }
 
+/* CARD */
 .card{
 min-width:140px;
-background:#111827;
+background:rgba(17,24,39,0.8);
 border-radius:18px;
 padding:15px;
 text-align:center;
+backdrop-filter:blur(10px);
 transition:0.3s;
 }
 
@@ -38,6 +52,7 @@ transition:0.3s;
 transform:scale(1.05);
 }
 
+/* ICON */
 .icon{
 width:70px;
 height:70px;
@@ -46,16 +61,18 @@ margin-bottom:10px;
 object-fit:cover;
 }
 
+/* TEXT */
 .name{
 font-size:14px;
 margin-bottom:10px;
 }
 
+/* BUTTON */
 .btn{
 padding:8px 10px;
 border:none;
 border-radius:10px;
-background:#22c55e;
+background:linear-gradient(45deg,#22c55e,#16a34a);
 color:white;
 font-size:13px;
 }
@@ -64,6 +81,10 @@ font-size:13px;
 </head>
 
 <body>
+
+<div class="banner">
+🎬 ProApps Premium
+</div>
 
 <div class="header">🔥 Apps Destacadas</div>
 
