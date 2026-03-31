@@ -13,24 +13,35 @@ color:white;
 text-align:center;
 }
 
-.box{margin-top:80px;}
-
-input{
-padding:12px;
-border-radius:10px;
-border:none;
-width:80%;
-margin-top:10px;
+/* CONTENEDOR */
+.box{
+margin-top:80px;
+display:flex;
+flex-direction:column;
+align-items:center;
 }
 
-button{
-padding:12px;
+/* INPUT */
+input{
+padding:14px;
+border-radius:12px;
 border:none;
-border-radius:10px;
-margin-top:10px;
 width:80%;
-cursor:pointer;
+max-width:320px;
+margin-top:10px;
 font-size:16px;
+}
+
+/* BOTONES */
+button{
+padding:14px;
+border:none;
+border-radius:12px;
+margin-top:12px;
+width:80%;
+max-width:320px;
+font-size:16px;
+cursor:pointer;
 }
 
 /* PAYPAL */
@@ -43,14 +54,11 @@ justify-content:center;
 gap:10px;
 }
 
-/* ATH */
-.qr{
-margin-top:25px;
-}
-
-.qr img{
-width:220px;
-border-radius:12px;
+/* TEXTO */
+.sub{
+margin-top:20px;
+color:#9ca3af;
+font-size:14px;
 }
 </style>
 
@@ -66,34 +74,15 @@ border-radius:12px;
 <input id="code" placeholder="Código">
 <button onclick="checkCode()">Entrar</button>
 
-<p style="margin-top:25px;">¿No tienes acceso?</p>
+<p class="sub">¿No tienes acceso?</p>
 
-<!-- 🔥 PAYPAL PRO -->
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=anto7004@hotmail.com&amount=2&currency_code=USD&item_name=ProApps&return=https://pro-appstore.github.io/ProApps/verificar.html" target="_blank">
+<!-- 💳 PAYPAL PRO -->
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=anto7004@hotmail.com&amount=2&currency_code=USD&item_name=ProApps&return=https://pro-appstore.github.io/ProApps/verificar.html" target="_blank" style="width:100%;display:flex;justify-content:center;">
 <button class="paypal">
 <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" width="24">
 Pagar con PayPal
 </button>
 </a>
-
-<!-- 🔥 ATH MOVIL -->
-<div class="qr">
-<p>O paga con ATH Móvil</p>
-
-<img src="https://chat.openai.com/mnt/data/F2B4E3A9-B971-446F-A358-764BEC45CB79.jpeg">
-
-<p style="font-size:13px;color:#9ca3af;">
-Escanea el QR y realiza el pago
-</p>
-
-<!-- BOTÓN WHATSAPP -->
-<a href="https://wa.me/19392730722?text=Hola%20ya%20realic%C3%A9%20el%20pago%20por%20ATH%20en%20ProApps%20y%20quiero%20mi%20c%C3%B3digo%20de%20acceso">
-<button style="background:#25D366;color:white;margin-top:15px;">
-📲 Ya pagué por ATH
-</button>
-</a>
-
-</div>
 
 </div>
 
