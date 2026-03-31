@@ -49,7 +49,6 @@ cursor:pointer;
 
 <p style="margin-top:20px;">¿No tienes acceso?</p>
 
-<!-- 🔥 BOTÓN PAYPAL FIX (ABRE CHECKOUT REAL) -->
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=anto7004@hotmail.com&amount=2&currency_code=USD&item_name=ProApps&return=https://pro-appstore.github.io/ProApps/verificar.html" target="_blank">
 <button>💳 Comprar acceso</button>
 </a>
@@ -57,11 +56,18 @@ cursor:pointer;
 </div>
 
 <script>
+
+//////////////////////////
+// 🔥 CAMBIA TODO AQUÍ 🔥
+//////////////////////////
+
 var codigosValidos = [
 "VIP123",
 "PRO777",
 "APP2026"
 ];
+
+//////////////////////////
 
 function checkCode(){
 var code = document.getElementById("code").value;
